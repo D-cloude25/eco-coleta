@@ -1,0 +1,8 @@
+const { getDefaultConfig } = require("expo/metro-config");
+
+const config = getDefaultConfig(__dirname);
+
+// Required to allow the 4th argument in require.context
+config.transformer.unstable_allowRequireContext = true;
+
+module.exports = config;
